@@ -1,8 +1,26 @@
 title: 『墓の彼方からの回想』試訳
-exclude: README.md
+theme: jekyll-theme-primer
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - wrangler.jsonc
+  - src
 lang: ja
 url: "https://kakimatsu.com"
 baseurl: "/mot"
 
+# Same defaults as GitHub Pages
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-optional-front-matter
+  - jekyll-titles-from-headings
+  - jekyll-default-layout
+  - jekyll-relative-links
